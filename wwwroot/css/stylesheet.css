@@ -1,0 +1,73 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* reset */
+body, h2, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* global styling */
+header, main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* header styling */
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+}
+
+header a {
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* body styling */
+main {
+    padding-top: 32px;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 32px;
+}
+
+.recipe_properties {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+}
+
+.property_list a {
+    color: grey;
+}
+
+table {
+    border-collapse: collapse;
+
+    align-self: center;
+
+    max-width: 70%;
+}
+
+td, th {
+    padding: 7px;
+    border: solid black 1px;
+}

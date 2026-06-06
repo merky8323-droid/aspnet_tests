@@ -1,0 +1,75 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link href="~/css/stylesheet.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- 
+    main index for my recipes:
+    -->
+
+	<!--header with homepage link, add recipes, search recipes-->
+	<header>
+		<h1>
+			<a href="#">Recipes</a>
+		</h1>
+		<nav>
+            <a href="./">Add</a>
+			<a href="./">Edit </a>
+			<a href="./">Search</a>
+		</nav>
+	</header>
+
+	<!--table with mock recipes-->
+	<main>
+		<div class="recipe_properties">
+			<p class="property_list">
+				<i>
+					<a href="#">method</a>,
+					<a href="#">type</a>
+				</i>
+			</p>
+			<h2>Recipe Name</h2>
+		</div>
+
+		<table>
+			<thead>
+				<tr>
+					<th rowspan="2">Ingredient Name</th>
+					<th colspan="2">Measurements</th>
+					<th rowspan="2">Available</th>
+					<th rowspan="2">Actual</th>
+				</tr>
+
+				<tr>
+					<th scope="row">Metric</th>
+					<th scope="row">Unit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Item</td>
+					<td>Item</td>
+					<td>Item</td>
+					<td>Item</td>
+					<td>Item</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<ol>
+			<li>Item</li>
+			<li>Item</li>
+			<li>Item</li>
+		</ol>
+	</main>
+</body>
+</html>
