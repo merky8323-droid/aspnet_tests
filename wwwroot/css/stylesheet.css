@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    display: inline flow-root;
+}
+
 /* global styling */
 header, main {
     padding-left: 10%;
@@ -46,6 +50,10 @@ main {
     justify-content: center;
     align-content: center;
     gap: 32px;
+}
+
+.test_text {
+    text-align: center;
 }
 
 .recipe_properties {

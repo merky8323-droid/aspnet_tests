@@ -1,0 +1,94 @@
+﻿@{
+    Layout = null;
+}
+
+@*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RPS</title>
+	<link href="/css/rps_stylesheet.css" rel="stylesheet"/>
+</head>
+<body>
+	<header>
+		<h1><a href="#">RPS</a></h1>
+
+		<nav>
+			<a>Item 1</a>
+			<a>Item 2</a>
+			<a>Item 3</a>
+		</nav>
+	</header>
+
+	<!--rps
+		- main mechanics obvious, this is more an exercise in css to make it look better
+		- experiment with transitions and using math to make it more interactive
+	-->
+	<main>
+		<section class="arena">
+			<div class="choice_img">
+				<div class="choice_desc">
+					<h2>Your Choice</h2>
+					<img id="plr_choice_img" src="/images/r.png" />
+				</div>
+				<div class="choice_desc">
+					<h2>CPU Choice</h2>
+					<img id="cpu_choice_img" src="/images/p.png" />
+				</div>
+			</div>
+
+			<p id="round_desc">"You have chosen rock, while the CPU has chosen paper."</p>
+			<div class="plr_choices">
+				<button class="plr_choice">Rock</button>
+				<button class="plr_choice">Paper</button>
+				<button class="plr_choice">Scissors</button>
+			</div>
+			<button class="confirm">Play</button>
+		</section>
+	</main>
+
+	<script src="/js/rps.js"></script>
+</body>
+</html> *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="css/rps_stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+	<main class="arena">
+		<h1>RPS</h1>
+
+		<section class="rd_scoreboard">
+			<div class="portrait">
+				<h2>Player Hand</h2>
+				<img id="plr_portrait" src="images/r.png" />
+			</div>
+			<p id="score">0W-0T-0L</p>
+			<div class="portrait">
+				<h2>CPU Hand</h2>
+				<img id="cpu_portrait" src="images/r.png" />
+			</div>
+		</section>
+
+		<section class="plr_menu">
+			<h3>Choose your hand</h3>
+				<section class="plr_choices">
+					<button>R</button>
+					<button>P</button>
+					<button>S</button>
+				</section>
+			<button id="confirm">Play</button>
+			<p id="round_desc">You played</p>
+		</section>
+	</main>
+
+	<script src="/js/rps.js"></script>
+</body>
+</html>

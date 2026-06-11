@@ -1,0 +1,90 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* reset */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    display: inline flow-root;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+/* page styling */
+.arena {
+    margin-top: 10%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 10px;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightgray;
+}
+
+.rd_scoreboard {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rd_scoreboard #score {
+    font-size: 200%;
+    text-align: center;
+}
+
+.portrait {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.plr_menu {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.plr_menu .plr_choices {
+    display: flex;
+    justify-content: space-around;
+}
+.plr_menu .plr_choices button {
+    margin: 15px;
+    border-radius: 100%;
+}
+#confirm {
+    font-size: 24px;
+}
+#round_desc {
+    margin-top: 10px;
+}
