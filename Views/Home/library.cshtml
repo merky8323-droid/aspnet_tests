@@ -1,0 +1,117 @@
+﻿ @{
+    Layout = null;
+}
+
+@*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="/css/library_stylesheet.css" />
+</head>
+<body>
+	<header>
+		<h1>Library</h1>
+
+		<nav>
+			<a id="add_book" href="#">Add Book</a>
+			<form action="" method="get">
+				<div class="book_search">
+					<input type="text" name="book_search" id="book_search" placeholder="search for book details.." />
+				</div>
+			</form>
+		</nav>
+	</header>
+
+	<main>
+		<section class="shelf">
+			<button class="book">
+				<h2 id="title">Fanged Noumena</h2>
+				<p id="author">Nick Land</p>
+				<p id="progress">0/300</p>
+			</button>
+		</section>
+
+		<section id="main_display">
+			<h2 id="title_main">Title</h2>
+			<p id="author_main">Author</p>
+			<p id="text_main">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit ab accusantium aliquid architecto aspernatur at atque beatae blanditiis commodi consequatur consequuntur corporis cumque cupiditate debitis delectus deleniti deserunt dicta dignissimos distinctio.
+			</p>
+		</section>
+	</main>
+
+	<script src="/js/library.js"></script>
+</body>
+</html> *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link href="/css/library_stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+	<nav>
+		<h1><a href="#">Library</a></h1>
+		<div id="links">
+			<a href="#" id="add_book">Add Book</a>
+		</div>
+	</nav>
+
+	<main>
+		<section id="shelf">
+
+		</section>
+		<section id="selected_content">
+			<h2 id="title"></h2>
+			<p id="author"></p>
+			<p id="content"></p>
+		</section>
+	</main>
+
+	<template id="book_template">
+		<button class="book">
+			<h2 id="title"></h2>
+			<p id="author"></p>
+			<p id="pages"></p>
+		</button>
+	</template>
+
+	<template id="sidebar">
+		<div id="sidebar_container">
+			<form id="book_entry_form">
+				<h3>Add New Book Details</h3>
+
+				<div class="form_group">
+					<label for="input_title">Book Title:</label>
+					<input type="text" id="input_title" required placeholder="e.g., Synthetic Worlds" />
+				</div>
+
+				<div class="form_group">
+					<label for="input_author">Author:</label>
+					<input type="text" id="input_author" required placeholder="e.g., Edward Castronova" />
+				</div>
+
+				<div class="form_group">
+					<label for="input_pages">Page Count:</label>
+					<input type="number" id="input_pages" required min="1" placeholder="e.g., 350" />
+				</div>
+
+				<div class="form_actions">
+					<button type="submit" id="submit_book_btn">Save to Shelf</button>
+					<button type="button" id="cancel_book_btn">Cancel</button>
+				</div>
+			</form>
+		</div>
+	</template>
+
+	<script src="/js/library.js"></script>
+</body>
+</html>

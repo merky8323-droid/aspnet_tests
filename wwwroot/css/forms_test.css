@@ -1,0 +1,8 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+#obj_test_p {
+    white-space: pre-line;
+}
