@@ -8,9 +8,12 @@ namespace wd.Controllers
     {
         public IActionResult Index()
         {
-            return View("library");
+            return View("library_final");
         }
+
+
         public IActionResult recipe_template() { return View("recipe_template"); }
+        public IActionResult library_final() { return View("library_final"); }
         public IActionResult library() { return View("library"); }
         public IActionResult testing_page() { return View("testing_page"); }
         public IActionResult rps() { return View("rps"); }

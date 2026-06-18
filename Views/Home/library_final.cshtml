@@ -1,0 +1,72 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="/css/library_final_stylesheet.css"/>
+</head>
+<body>
+	@* template for book content and sidebar *@
+	<template id="book">
+		<div class="book_container">
+			<h2 id="title"></h2>
+			<p id="author"></p>
+			<p id="pages"></p>
+			<div class="book_options">
+				<p>
+					<a id="remove" href="#">remove</a>, 
+					<a id="toggle_read" href="#">mark as read</a>
+				</p>
+			</div>
+		</div>
+	</template>
+
+	<div id="sidebar">
+		<form id="sidebar_form">
+			<h3>Add New Book Details</h3>
+
+			<div class="form_group">
+				<label for="input_title">Book Title:</label>
+				<input type="text" id="input_title" required placeholder="e.g., Synthetic Worlds" />
+			</div>
+
+			<div class="form_group">
+				<label for="input_author">Author:</label>
+				<input type="text" id="input_author" required placeholder="e.g., Edward Castronova" />
+			</div>
+
+			<div class="form_group">
+				<label for="input_pages">Page Count:</label>
+				<input type="number" id="input_pages" required min="1" placeholder="e.g., 350" />
+			</div>
+
+			<div class="form_actions">
+				<button type="submit" id="submit_book_btn">Save to Shelf</button>
+				<button type="button" id="cancel_book_btn">Cancel</button>
+			</div>
+		</form>
+	</div>
+
+	@* main content *@
+	<nav>
+		<h1>Library</h1>
+		<a href="#" id="add_book">Add Book</a>
+	</nav>
+	<main>
+		<section id="shelf"></section>
+		<section id="selected_content">
+			<h2 id="title">Select an item from the shelf or add a new book.</h2>
+			<p id="author"></p>
+			<p id="text_content"></p>
+		</section>
+	</main>
+
+	<script src="/js/library_final.js"></script>
+</body>
+</html>
